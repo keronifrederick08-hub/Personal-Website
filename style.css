@@ -1,0 +1,470 @@
+
+/* ==========================
+   GENERAL STYLING
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10131c;
+    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+.tag {
+    color: #ff7547;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* ==========================
+   NAVIGATION
+========================== */
+
+header {
+    background-color: #1b2130;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ff7547;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff7547;
+}
+
+/* ==========================
+   HOME PAGE
+========================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 80px 8%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 45px;
+    line-height: 1.2;
+}
+
+.hero h1 span,
+.page-heading h1 span {
+    color: #ff7547;
+}
+
+.hero h2 {
+    color: #b5b9c5;
+    font-size: 20px;
+}
+
+.hero-text > p:not(.tag) {
+    color: #cccccc;
+    margin: 20px 0;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ff7547;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: #ff7547;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #e85b30;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ff7547;
+    color: #ff7547;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section {
+    background-color: #1b2130;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.welcome-section p:not(.tag) {
+    color: #cccccc;
+    max-width: 750px;
+    margin: auto;
+}
+
+/* ==========================
+   GENERAL PAGE SETTINGS
+========================== */
+
+.page-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+.page-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.page-heading h1 {
+    font-size: 40px;
+}
+
+.page-heading p:not(.tag) {
+    color: #cccccc;
+}
+
+/* ==========================
+   ABOUT PAGE
+========================== */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-text p {
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+/* INTEREST CARDS */
+
+.interests {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.interests h2 {
+    font-size: 30px;
+}
+
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.interest-card {
+    background-color: #1b2130;
+    border: 1px solid #343b4c;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+.interest-card:hover {
+    border-color: #ff7547;
+}
+
+.interest-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.interest-card h3 {
+    color: #ff7547;
+    margin-top: 10px;
+}
+
+.interest-card p {
+    color: #cccccc;
+    padding: 0 12px;
+    font-size: 14px;
+}
+
+/* ==========================
+   PORTFOLIO PAGE
+========================== */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #1b2130;
+    border: 1px solid #343b4c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    border-color: #ff7547;
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h2 {
+    font-size: 22px;
+}
+
+.project-info p:not(.tag) {
+    color: #cccccc;
+}
+
+/* ==========================
+   CONTACT PAGE
+========================== */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #1b2130;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #343b4c;
+}
+
+/* CONTACT INFORMATION */
+
+.contact-info h2,
+.contact-form h2 {
+    color: #ff7547;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info > p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.contact-detail {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #252c3d;
+    border-left: 4px solid #ff7547;
+    border-radius: 6px;
+}
+
+.contact-detail h3 {
+    color: #ff7547;
+    margin-bottom: 5px;
+}
+
+.contact-detail p {
+    color: white;
+}
+
+.contact-detail a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-detail a:hover {
+    color: #ff7547;
+}
+
+/* CONTACT FORM */
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #10131c;
+    color: white;
+    border: 1px solid #444c5e;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ff7547;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    font-size: 16px;
+}
+
+.form-note {
+    color: #aaaaaa;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    background-color: #1b2130;
+    text-align: center;
+    padding: 20px;
+    color: #cccccc;
+    margin-top: 40px;
+}
+
+/* ==========================
+   MOBILE RESPONSIVENESS
+========================== */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero,
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-image img {
+        width: 90%;
+        height: 350px;
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-heading h1 {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
